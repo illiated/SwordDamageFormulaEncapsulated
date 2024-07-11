@@ -5,7 +5,6 @@ using SwordDamageFormulaEncapsulated;
 Random random = new Random();
 
 SwordDamage swordDamage = new SwordDamage(RollDice());
-// Need to set up the main here to use the class and its properties in a user interface.
 
 Console.WriteLine("0 for no magic/flaming, 1 for magic, 2 for flaming, 3 for both, anything else to quit: ");
 char input = Console.ReadKey().KeyChar;
@@ -22,3 +21,4 @@ int RollDice()
 {
     return random.Next(1, 7) + random.Next(1, 7) + random.Next(1, 7);
 }
+// next step is part 3 pm [age 267
